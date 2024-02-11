@@ -8,7 +8,7 @@ def main():
     ventana_principal.title("Roomba")
 
     canvas = configurar_canvas(ventana_principal)
-    #escuchador de ventos para compro
+    #escuchador de ventos para comprobar si el usuario ha pulsado en la zona y llamar a la función principal que muestra el tiempo estimado de limpieza
     canvas.bind("<Button>", lambda event: en_click_canvas(event, ventana_principal))
 
     ventana_principal.mainloop()

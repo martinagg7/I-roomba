@@ -14,11 +14,11 @@ def configurar_canvas(ventana_principal):
 
     # creamos un rectángulo para cada zona pasándoles las medidas
     for zona, info in zonas.items():
-        canvas.create_rectangle(*info['coordenadas'], fill=info['color'], outline='black')
+        canvas.create_rectangle(*info['coordenadas'], fill=info['color'])
 
     # el mueble
     mueble_coords = (101, 150, 191, 410)
-    canvas.create_rectangle(*mueble_coords, fill='brown', outline='black')
+    canvas.create_rectangle(*mueble_coords, fill='brown')
 
     #  nombre para cada zona
     for zona, info in zonas.items():
